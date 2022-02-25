@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.*;
+public class TicketSorting {
+  public static void main(String[]args){
+    String Y=" ";
+    Scanner sc=new Scanner(System.in);
+    Calculation g= new Calculation();
+    g.TotalTicket();
+    System.out.println("which row?, sir");
+    int row=sc.nextInt();
+    System.out.println("which column?, sir");             
+    int column=sc.nextInt();
+    g.seatbooking(row,column);
+    System.out.println("Would you like to Book,Sir?");
+    Y=sc.next();    
+      g.print(row,column);
+      g.doubleCheck(row,column);
+     }}
+      
+  
+    
+        
+        
+        
